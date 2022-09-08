@@ -1,0 +1,25 @@
+.header{
+
+    &__top{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+
+
+.nav{
+    &__toggle{
+
+        > span {
+            width: 30px;
+            height: 3px;
+
+
+            &:not(:last-child){
+                margin-bottom: 5px;
+            }
+        }
+    }
+}

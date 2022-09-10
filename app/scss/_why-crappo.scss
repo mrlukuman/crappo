@@ -1,0 +1,139 @@
+.whycrappo{
+   
+    .numbers{
+        display: flex;
+        flex-direction: column;
+        padding-bottom: 2rem;
+        text-align: center;
+        align-items: center;
+
+        
+
+        &:not(:last-child){
+            padding-right: 2rem;
+        }
+
+        &__item{
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            padding-bottom: 2rem;
+
+            @include breakpoint-down(medium){
+                max-width: 15rem;
+            }
+
+
+            .numbers-text{
+                padding-left: 1.5rem;
+                color:#E0E0E0;
+
+                h2{
+                    font-family: 'Rubik', sans-serif;
+                    font-weight: 700; 
+                    color: white;
+                    padding-bottom: 1rem;
+
+                    @include breakpoint-up(large){
+                        font-size: 3rem;
+                    }
+                }
+
+            }
+
+            @include breakpoint-up(large){
+                flex:1
+            }
+
+            &:not(:last-child){
+
+                @include breakpoint-up(large){
+                    padding-right: 2rem;
+                }
+            }
+    
+
+
+        }
+        
+        @include breakpoint-up(large){
+            flex-direction: row;
+            width: 100%;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 74rem;
+        }
+
+        // @include breakpoint-up(large){
+        //     width: 80%;
+        // }
+
+       
+        
+    }
+
+
+    .content{
+        display: flex;
+        flex-direction: column;
+
+        @include breakpoint-up(large){
+            flex-direction: row;
+            max-width: 74rem;
+        }
+
+
+        img{
+            width: 100%;
+            height: auto;
+
+            @include breakpoint-up(large){
+                flex: 1;
+            }
+        }
+
+        &__text{
+            padding-top: 4rem;
+            text-align: center;
+
+            .main__text{
+                font-family: 'Rubik', sans-serif;
+                font-weight: 700; 
+                color: white;
+                padding-bottom: 2rem;
+                font-size: 2rem;
+
+                    @include breakpoint-up(large){
+                        font-size: 3rem;
+                    }
+            }
+
+            .sub__text{
+                font-family: 'Rubik', sans-serif;
+                color:#E0E0E0;
+                line-height: 1.5;
+                padding-bottom: 2rem;
+                
+            }
+
+            @include breakpoint-up(large){
+                flex: 1;
+                padding-left: 2rem;
+            }
+
+        }
+    }
+
+
+
+
+
+
+
+    @include breakpoint-up(large){
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+    
+}

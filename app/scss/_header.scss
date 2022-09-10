@@ -1,4 +1,6 @@
 .header{
+    display: flex;
+    justify-content: center;
     
 
     .logo{
@@ -17,16 +19,22 @@
         }
     }
     &__top{
+        width: 80vw;
         display: flex;
         justify-content: space-between;
         //flex-direction: column;
         align-items: center;
         text-align: center;
 
+        @include breakpoint-up(large){
+            width: 74rem;
+        }
+    
+
 
         
     }
-
+   
 
 }
 

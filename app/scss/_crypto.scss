@@ -1,0 +1,17 @@
+.crypto-background{
+    background-color: #FBFCFE;;
+    padding-top: 20rem;
+    position: relative;
+    bottom: 15rem;
+    width: 100vw;
+    z-index: -1;
+
+    @include breakpoint-up(large) {
+        position: relative;
+        bottom: 11.2rem;
+    }
+}
+
+.crypto{
+    
+}

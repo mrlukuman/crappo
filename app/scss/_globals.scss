@@ -10,12 +10,14 @@ a, a:hover, a:visited{
 }
 
 body{
+    position:relative;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     background-color: #0D0D2B;
     color: white;
+    font-family: 'Rubik', sans-serif;
 }
 
 .container{

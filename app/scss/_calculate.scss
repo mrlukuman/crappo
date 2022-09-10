@@ -73,12 +73,42 @@
 
 
 .revenue-calculation{
+    line-height: 2;
     background-color: white;
     color: black;
     width: 18rem;
+    padding: 2rem;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    font-size: 0.8rem;
 
     @include breakpoint-up(large){
         width: 60%;
+        font-size: 0.8rem;
+    }
+
+
+    .main__text{
+        color: #3671E9;
+        ;
+    }
+
+    .estimated__value{
+        font-size: 2rem;
+        font-weight: 700;
+
+        @include breakpoint-down(medium){
+            font-size: 1.5rem;
+        }
+
+        span{
+            color:#3671E9;
+        }
+    }
+
+    .sub__text{
+        color: #828282;
+
     }
 }
 

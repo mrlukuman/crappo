@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="dist/styles.css">
 </head>
 <body>
-    
+    <div class="background-blueish">
     <div class="container">
         <header class="header">
             <div class="header__top">
@@ -123,22 +123,38 @@
         </section>
     </div>
 
-    <div class="container">
-        <section class="calculate">
 
-            <div class="enter-hashrate">
-                <div class="amount-input"></div> <!--To be changed to an input form-->
-                <div class="th/s"></div>
-                <button class="button">Calculate</button>
-            </div>
+</div>
 
-            <div class="estimated-revenue">
-                <div></div>
-                <div></div>
-                <div></div>
-            </div>
-        </section>
-    </div>
+
+    <section class="calculate">
+
+        <div class="enter-hashrate">
+            <input placeholder="Enter your hash rate" type="text" pattern="[0-9]+">
+            <select class="dropdown" name="" id="" >
+                <option value="TH/s">TH/s</option>
+                <option value="Option2">Option 2</option>
+                <option value="Option3">Option 3</option>
+                <option value="Option4">Option 4</option>
+            </select>
+            <button type="button" class="button">Calculate</button>
+        </div>
+
+    </section>
+
+    
+
+    <section class="revenue-calculation">
+        <div class="estimated-revenue">
+            <div class="main__text">Esimated Revenue</div>
+            <div class="estimated__value">0.055 130 59 ETH ($1275)</div>
+            <div class="sub__text">Revenue will change based on mining difficulty and Ethereum price.</div>
+        </div>
+    </section>
+   
+        
+    
+ 
 
     <div class="container"></div>
 

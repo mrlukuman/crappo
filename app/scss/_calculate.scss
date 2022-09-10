@@ -1,0 +1,88 @@
+.calculate{
+    width: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #FBFCFE;
+    padding: 2rem;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+
+
+    .enter-hashrate{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+
+        .button{
+            width: fit-content;
+            
+        }
+
+        @include breakpoint-up(large){
+            width: 100%;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+        }
+    
+    }
+
+    .dropdown{
+        border: none;
+        background-color: #FBFCFE;
+        border-bottom: 1px solid #E0E0E0;
+        margin-bottom: 2rem;
+        width: 14rem;
+        font-size: 1rem;
+        padding-bottom: 0.5rem;
+
+        @include breakpoint-up(large){
+            width: 10rem;
+            margin-bottom: 0;
+        }
+
+    }
+
+    input{
+        border: none;
+        background-color: #FBFCFE;
+        border-bottom: 1px solid #E0E0E0;
+        margin-bottom: 2rem;
+        width: 14rem;
+        font-size: 1rem;
+        padding-bottom: 0.5rem;
+
+        @include breakpoint-up(large){
+            width: 14rem;
+            margin-bottom: 0;
+        }
+
+        &::placeholder{
+            color: black;
+            opacity: 1;
+        }
+    }
+
+    @include breakpoint-up(large){
+        width: 60%;
+    }
+    
+}
+
+
+.revenue-calculation{
+    background-color: white;
+    color: black;
+    width: 18rem;
+
+    @include breakpoint-up(large){
+        width: 60%;
+    }
+}
+
+
+
+
+

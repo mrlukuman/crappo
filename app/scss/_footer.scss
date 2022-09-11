@@ -1,0 +1,102 @@
+footer{
+    text-align: center;
+    line-height: 2;
+
+    .generals{
+        display: grid;
+        gap: 1rem;
+
+        @include breakpoint-up(large){
+            grid-template-columns: repeat(3, 1fr) 1.5fr;
+        }
+    }
+
+    
+}
+
+.payments{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.methods{
+    min-width: 15rem;
+    padding-top: 2rem ;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.fa-cc-visa,
+.fa-cc-mastercard,
+.fa-bitcoin{
+    font-size: 4rem;
+
+    &:hover{
+        color: orange;
+    }
+
+    @include breakpoint-down(medium){
+        font-size: 3rem;
+    }
+}
+
+
+.fa-square-facebook,
+.fa-instagram,
+.fa-youtube,
+.fa-twitter,
+.fa-linkedin{
+    font-size: 1.2rem;
+    padding-left: 1rem;
+
+    &:hover{
+        color: orange;
+    }
+}
+
+.socials{
+    padding-top: 2rem;
+    display: block;
+    width: 80vw;
+
+    @include breakpoint-up(large){
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+
+
+.quick__links, .resources{
+    padding-bottom: 1rem;
+
+    a{
+        font-size: 0.8rem;
+        opacity: 0.8;
+
+        &:hover{
+            opacity: 1;
+            color:orange;
+        }
+    }
+}
+
+.grid__item{
+    display: flex;
+    flex-direction: column;
+}
+
+.logo{
+    display: flex;
+    align-items: flex-start;
+    flex-direction: row;
+    justify-content: center;
+    padding-bottom: 1rem;
+    &__text{
+        padding-left: 1rem;
+    }
+}

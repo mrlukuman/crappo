@@ -10,7 +10,6 @@ a, a:hover, a:visited{
 }
 
 body{
-    position:relative;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -47,11 +46,18 @@ body{
   }
 
 
-  .background-white{
-      background-color: #FBFCFE;
+  .background-white{    
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    background-color: #FBFCFE;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
   }
 
   background-gradient{
-      background-image: linear-gradient();
+    width: 100vw;
+    background-image: linear-gradient();
   }
 

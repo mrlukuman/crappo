@@ -56,8 +56,13 @@ body{
     text-align: center;
   }
 
-  background-gradient{
+  .background-gradient{
+    display: flex;
     width: 100vw;
-    background-image: linear-gradient();
+    justify-content: center;
+    background-color: #FBFCFE;
+    flex-direction: column;
+    align-items: center;
+    background-image: linear-gradient(#2B076E, #0D0D2B);
   }
 

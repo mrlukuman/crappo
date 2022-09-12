@@ -10,6 +10,7 @@ a, a:hover, a:visited{
 }
 
 body{
+    position: relative;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -65,4 +66,78 @@ body{
     align-items: center;
     background-image: linear-gradient(#2B076E, #0D0D2B);
   }
+
+.background-blueish{
+    position: relative;
+
+    &.open{
+
+        .overlay{
+            display: block;
+        }
+
+        .nav__links{
+            position: relative;
+            top: 10rem;
+            right: 9rem;
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+            z-index: 2;
+            animation: moveInleft 1s forwards;
+        }
+        
+
+        .nav__toggle{
+            position: relative;
+            left: 2rem;
+            z-index: 2;
+            animation: moveInleft 1s forwards;
+
+
+            > span:first-child{
+                transform: rotate(45deg);
+            }
+            > span:nth-child(2){
+                opacity: 0;
+            }
+            > span:last-child{
+                transform: rotate(-45deg);
+            }
+        }
+    }
+
+
+  .overlay{
+    display: none;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #0D0D2B;
+    z-index: 1;
+
+    .nav__links{
+        color: white;
+    }
+}
+
+}
+
+
+.noscroll{
+    overflow: hidden;
+}
+
+
+
+
+.moveInleft{
+    animation: moveInleft 1s forwards;
+}
+
+.moveOutleft{
+    animation: moveOutleft 1s;
+}
 

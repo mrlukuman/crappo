@@ -1,15 +1,14 @@
 .header{
+    position: relative;
     display: flex;
     justify-content: center;
-    
+    animation: moveInleft 2s;
 
     .logo{
         display: flex;
         align-items: center;
+        
 
-        &__img{
-
-        }
         &__text{
             margin-left: .7rem;
             color: white;
@@ -43,6 +42,7 @@
 .nav{
     display: flex;
     align-items: center;
+    animation: moveInleft 2s;
 
     &__toggle{
 
@@ -52,6 +52,8 @@
             height: 3px;
             background-color: white;
             border-radius: 20px;
+            transform-origin: left center;
+            transition: all 300ms ease-in-out;
 
 
             &:not(:last-child){
@@ -62,6 +64,8 @@
         @include breakpoint-up(large){
             display: none;
         }
+
+        
     }
 
     &__links{
@@ -69,6 +73,7 @@
         display: flex;
         justify-content: space-between;
         margin-right: 4rem;
+        
       
 
         a{
@@ -109,3 +114,6 @@
 
     
 }
+
+
+

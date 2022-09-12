@@ -6,6 +6,7 @@
 
     &__description{
         max-width: 32rem;
+        animation: moveInleft 2s forwards;
 
         .promotion{
             width: fit-content;
@@ -68,7 +69,10 @@
     }
 
     &__image{
+        animation: roll-in 2s;
+        
             img{
+                
                 height: auto;
                 max-width: 100%;
                 

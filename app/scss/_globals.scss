@@ -44,6 +44,12 @@ body{
     background-color: #3671e9;
     border-radius: 20px;
     color: white;
+
+    &:hover{
+        color: orange;
+        background-color: white;
+        transform: scale(1.2);
+    }
   }
 
 
@@ -104,6 +110,15 @@ body{
             > span:last-child{
                 transform: rotate(-45deg);
             }
+        }
+
+        .user{
+            display: block;
+            position: relative;
+            right: 26rem;
+            top: 20rem;
+            z-index: 2;
+            animation: moveInleft 1s forwards;
         }
     }
 
